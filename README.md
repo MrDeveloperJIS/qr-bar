@@ -1,2 +1,5 @@
-# qr-bar
-QR Code; Bar Code; Data Matrix; Generator;
+QR Code Generator
+
+Bar Code Generator
+
+Data Matrix Generator

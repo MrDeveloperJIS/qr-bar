@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/datamatrix.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="data-matrix/datamatrix.js"></script>
+    <title>Data Matrix Generator</title>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <div id="set">
+
+        <a id="op1" class="opt" href="#">Show settings</a>
+        <a id="op2" class="opt" href="#">Hide settings</a>
+
+        <div class="legend">
+
+            <h3>DATAMATRIX SETTINGS</h3>
+
+        </div>
+
+        <table>
+            <tr>
+                <th>
+
+                    <label for="in1">Height or Dim</label>
+                </th>
+                <td><input id="in1" type="number" value="256" min="256" max="1024" step="256" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in2">Rectangle</label>
+                </th>
+                <td><input id="in2" type="checkbox" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in3">Padding</label>
+                </th>
+                <td><input id="in3" type="number" value="2" min="2" max="10" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in4">Faces</label>
+                </th>
+                <td><input id="in4" type="color" value="#000000" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in5">Background color</label>
+                </th>
+                <td><input id="in5" type="color" value="#ffffff" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in6">Background opaque</label>
+                </th>
+                <td><input id="in6" type="checkbox" /></td>
+            </tr>
+            <tr>
+                <th>
+
+                    <label for="in7">Optimized SVG SIZE</label>
+                </th>
+                <td><input id="in7" type="checkbox" checked="checked" /></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="txt"><textarea id="msg"></textarea></div>
+
+    <div id="hnt">
+        <pre id="res"></pre>
+    </div>
+
+
+    <script src="data-matrix/script.js"></script>
+
+</body>
+
+</html>
