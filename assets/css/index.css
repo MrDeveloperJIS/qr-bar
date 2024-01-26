@@ -71,7 +71,12 @@ body {
 
     .section-heading {
         margin-top: 50px;
-        font-size: large;
+        font-size: x-large;
+    }
+
+    .image-showcase {
+        max-width: 512px;
+        margin: auto;
     }
 
     .image-showcase img {
@@ -94,15 +99,16 @@ body {
 
     .section-heading {
         margin-top: 30px;
-        font-size: medium;
+        font-size: larger;
     }
 
-    .image-showcase a {
-        flex-basis: 100%;
+    .image-showcase {
+        max-width: 100%;
+        margin: auto;
     }
 
     .image-showcase img {
-        max-width: 100px;
+        max-width: 125px;
     }
 
     .copyright {
