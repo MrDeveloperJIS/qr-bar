@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- meta data -->
+    <meta name="description" content="Bar Code Generator.">
+    <meta name="copyright" content="Md. Jahdul Islam Sujan">
+    <meta name="audivor" content="Md. Jahidul Islam Sujan">
+    <!-- auto reload -->
+    <meta http-equiv="refresh" content="3600">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <!-- particles css -->
+    <link rel="stylesheet" href="../../assets/css/particles.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../assets/css/apps.css">
+    <!-- page title -->
+    <title> Bar Code Generator </title>
+    <!-- Google tag (gtag.js) - start -->
+
+    <!-- Google tag (gtag.js) - end -->
+</head>
+
+<body>
+
+    <!-- particles -->
+    <div id="particles-js"></div>
+    <!-- particles -->
+
+    <header>
+
+        <div>
+            <a href="/qr-bar/">
+                <img src="../../assets/img/logo.png" alt="Home Page" class="logo">
+            </a>
+        </div>
+        <nav>
+            <label class="hamburger">
+                <input type="checkbox" id="toggle-btn">
+                <svg viewBox="0 0 32 32" width="40">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+            <section id="button-container"></section>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Bar Code Generator</h1>
+
+        <section id="box"></section>
+
+        <section id="txt">
+            <textarea id="msg"></textarea>
+        </section>
+
+        <section id="hnt">
+            <pre id="res"></pre>
+        </section>
+
+        <section id="set">
+
+            <a id="op1" class="opt" href="#">Advance settings</a>
+            <a id="op2" class="opt" href="#">Hide settings</a>
+    
+            <table>
+                <tr>
+                    <th>
+                        <label for="in1">Width</label>
+                    </th>
+                    <td>
+                        <input id="in1" type="number" value="320" min="256" max="1024" step="256">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in2">Auto Width</label>
+                    </th>
+                    <td>
+                        <input id="in2" type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in3">Height</label>
+                    </th>
+                    <td>
+                        <input id="in3" type="number" value="80" min="64" max="256" step="32">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in4">Auto Height</label>
+                    </th>
+                    <td>
+                        <input id="in4" type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in5">Padding x</label>
+                    </th>
+                    <td>
+                        <input id="in5" type="number" value="20" min="2" max="64" step="2">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in6">Padding Y</label>
+                    </th>
+                    <td>
+                        <input id="in6" type="number" value="16" min="2" max="64" step="2">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in7">Faces</label>
+                    </th>
+                    <td>
+                        <input id="in7" type="color" value="#000000">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in8">Background color</label>
+                    </th>
+                    <td>
+                        <input id="in8" type="color" value="#ffffff">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in9">Background opaque</label>
+                    </th>
+                    <td>
+                        <input id="in9" type="checkbox" checked>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+    
+        </section>
+
+    </main>
+
+    <footer>
+
+        <span id="copyright"></span>
+
+    </footer>
+
+    <!-- project javascript -->
+    <script src="barcode.js"></script>
+    <script src="script.js"></script>
+    <!-- particles javascript -->
+    <script src="../../assets/js/particles.min.js"></script>
+    <script src="../../assets/js/particles.js"></script>
+    <!-- custom javascript -->
+    <script src="../../assets/js/apps.js"></script>
+    <script src="../../assets/js/buttons.js"></script>
+
+</body>
+
+</html>

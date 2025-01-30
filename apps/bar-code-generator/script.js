@@ -46,36 +46,32 @@
 			if (320 == d.dim[0] && 80 == d.dim[1]) delete d.dim;
 			if (20 == d.pad[0] && 16 == d.pad[1]) delete d.pad;
 			if (0 == d.pal[1]) delete d.pal.pop();
-			if (d.pal[0] == '#000000' && !d.pal[1]) delete d.pal;
+			if (d.pal[0] == '#000000' && d.pal[1] == '#ffffff') delete d.pal;
 
 			for (var k in d) {
 
 				var
 					v = d[k];
 
-				if (1 * v == v)
-					v = '  <i class="num">' + v + '</i>';
+				// if (1 * v == v)
+				// 	v = '  <i class="num">' + v + '</i>';
 
-				else if (Array == v.constructor) {
-					if (1 * v[0] == v[0])
-						v = '[ <i class="num">' + v.join('</i>, <i class="num">') + '</i>]';
-					else
-						v = '[<i class="clr">"<i>' + v.join('</i>"</i>, <i class="clr">"<i>') + '</i>"</i>]';
-				}
+				// else if (Array == v.constructor) {
+				// 	if (1 * v[0] == v[0])
+				// 		v = '[ <i class="num">' + v.join('</i>, <i class="num">') + '</i>]';
+				// 	else
+				// 		v = '[<i class="clr">"<i>' + v.join('</i>"</i>, <i class="clr">"<i>') + '</i>"</i>]';
+				// }
 
-				else
-					v = ' <i class="txt">"<i>' + v + '</i>"</i>';
+				// else
+				// 	v = ' <i class="txt">"<i>' + v + '</i>"</i>';
 
-				s.push((s.length ? ',' : ' ') + '<b class="key">' + k + '</b> : ' + v);
+				s.push('<b class="key">' + k + '\t</b> : ' + v);
 				c++;
 			}
 
-			//if( 1 == c )	else
-			res.innerHTML = '<b class="obj"><b>BARCode</b>(</b>' +
-				((1 == c) ?
-					'<i class="txt">"<i>' + d.msg + '</i>"</i>' :
-					'{\n\n    ' + s.join('\n    ') + '\n\n}') +
-				'<b class="obj">)</b>;\n';
+			res.innerHTML = '<b class="obj"><b>Bar Code</b></b>\n\n' +
+				((1 == c) ? d.msg : s.join('\n')) + '\n';
 
 		},
 
@@ -224,8 +220,8 @@
 	};
 
 	txt.value = [
-		'NEXTFOT', '20102022', '21122022'
-	][(Math.random() * 3) | 0];
+		'20102022', '21122022'
+	][(Math.random() * 2) | 0];
 
 	current(txt);
 	box.update();

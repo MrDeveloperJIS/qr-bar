@@ -8,8 +8,8 @@
     <meta name="description" content="QR Code, Bar Code, Data Matrix Generator - svg, png, jpg - A personal resource hub." />
     <meta name="copyright" content="Md. Jahdul Islam Sujan">
     <meta name="author" content="Md. Jahidul Islam Sujan" />
-    <!-- auto reload -->
-    <meta http-equiv="refresh" content="3600">
+    <!-- auto redirect -->
+    <meta http-equiv="refresh" content="2; url=https://mrdeveloperjis.github.io/qr-bar/">
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- particles css -->
@@ -19,7 +19,7 @@
     <!-- page title -->
     <title> QR Code, Bar Code, Data Matrix Generator </title>
     <!-- Google tag (gtag.js) - start -->
-    
+
     <!-- Google tag (gtag.js) - end -->
 </head>
 
@@ -33,43 +33,16 @@
 
         <!-- Info Section -->
         <section class="info">
-            <!-- <img src="assets/img/logo.png" alt="QR, Bar, DM"> -->
-            <h1>Scanable Code Generator</h1>
-            <p>Generate QR Code, Bar Code, Data Matrix.</p>
+            <img src="assets/img/logo.png" alt="">
+            <h1>QR Code, Bar Code, Data Matrix Generator</h1>
+            <p>Generate QR Code, Bar Code, Data Matrix. Export in svg, jpg, png.</p>
         </section>
-
-        <!-- Button Container - start -->
-        <section id="button-container">
-            <!-- Buttons will be dynamically added here -->
-        </section>
-        <!-- Button Container - end -->
-
-        <p id="copyright"></p>
 
     </main>
 
-    <!-- service worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('/qr-bar/service-worker.js')
-                .then(() => {
-                    console.log("Service Worker Registered Successfully");
-                    navigator.serviceWorker.ready.then((registration) => {
-                        registration.update();
-                    });
-                })
-                .catch((error) => {
-                    console.error("Service Worker Registration Failed:", error);
-                });
-        }
-    </script>
     <!-- particles javascript -->
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/particles.js"></script>
-    <!-- custom javascript -->
-    <script src="assets/js/buttons.js"></script>
-    <script src="assets/js/script.js"></script>
 
 </body>
 

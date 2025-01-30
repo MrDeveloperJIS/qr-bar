@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: *
+Disallow: /
+Disallow: /apps/
+Disallow: /assets/
+Crawl-Delay: 20
+Sitemap: https://mrdeveloperjis.github.io/qr-bar/sitemap.xml

@@ -49,7 +49,7 @@
 			if ('M' == d.ecl) delete d.ecl;
 			if (1 == d.ecb) delete d.ecb;
 			if (0 == d.pal[1]) delete d.pal.pop();
-			if (d.pal[0] == '#000000' && !d.pal[1]) delete d.pal;
+			if (d.pal[0] == '#000000' && d.pal[1] == '#ffffff') delete d.pal;
 			if (0 == d.vrb) delete d.vrb;
 
 			for (var k in d) {
@@ -57,24 +57,21 @@
 				var
 					v = d[k];
 
-				if (1 * v == v)
-					v = '  <i class="num">' + v + '</i>';
+				// if (1 * v == v)
+				// 	v = '  <i class="num">' + v + '</i>';
 
-				else if (Array == v.constructor)
-					v = '[<i class="clr">"<i>' + v.join('</i>"</i>, <i class="clr">"<i>') + '</i>"</i>]';
+				// else if (Array == v.constructor)
+				// 	v = '[<i class="clr">"<i>' + v.join('</i>"</i>, <i class="clr">"<i>') + '</i>"</i>]';
 
-				else
-					v = ' <i class="txt">"<i>' + v + '</i>"</i>';
+				// else
+				// 	v = ' <i class="txt">"<i>' + v + '</i>"</i>';
 
-				s.push((s.length ? ',' : ' ') + '<b class="key">' + k + '</b> : ' + v);
+				s.push('<b class="key">' + k + '\t</b> : ' + v);
 				c++;
 			}
 
-			res.innerHTML = '<b class="obj"><b>QRCode</b>(</b>' +
-				((1 == c) ?
-					'<i class="txt">"<i>' + d.msg + '</i>"</i>' :
-					'{\n\n    ' + s.join('\n    ') + '\n\n}') +
-				'<b class="obj">)</b>;\n';
+			res.innerHTML = '<b class="obj"><b>QR Code</b></b>\n\n' +
+				((1 == c) ? d.msg : s.join('\n')) + '\n';
 
 		},
 
@@ -101,7 +98,7 @@
 					' z': 'z',
 					' />': '/>'
 
-						,
+					,
 					'></path>': '/>',
 					'svg xmlns="http://www.w3.org/2000/svg"': 'svg'
 				}),
@@ -215,8 +212,8 @@
 	};
 
 	txt.value = [
-		'https://www.mdjahidulislamsujan.com/', 'https://www.nextfot.com/'
-	][(Math.random() * 2) | 0];
+		'https://www.mdjahidulislamsujan.com/', 'https://www.nextfot.com/', 'https://www.mrjis.com/', 'https://mrdeveloperjis.github.io'
+	][(Math.random() * 4) | 0];
 
 	current(txt);
 	box.update();
