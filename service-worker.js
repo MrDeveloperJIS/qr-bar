@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v1.0.1'; // 2025-01-31 12:25 am
+const CACHE_NAME = 'v1.0.2'; // 2025-02-03 12:15 am
 
 const urlsToCache = [
     // Root
@@ -10,13 +10,13 @@ const urlsToCache = [
     '/qr-bar/sitemap.xml',
     // Apps - HTML
     '/qr-bar/apps/bar-code-generator/index.html',
-    '/qr-bar/apps/data-matix-generator/index.html',
+    '/qr-bar/apps/data-matrix-generator/index.html',
     '/qr-bar/apps/qr-code-generator/index.html',
     // Apps - JS
     '/qr-bar/apps/bar-code-generator/barcode.js',
     '/qr-bar/apps/bar-code-generator/script.js',
-    '/qr-bar/apps/data-matix-generator/datamatrix.js',
-    '/qr-bar/apps/data-matix-generator/script.js',
+    '/qr-bar/apps/data-matrix-generator/datamatrix.js',
+    '/qr-bar/apps/data-matrix-generator/script.js',
     '/qr-bar/apps/qr-code-generator/qrcode.js',
     '/qr-bar/apps/qr-code-generator/script.js',
     // Assets - CSS
@@ -30,7 +30,10 @@ const urlsToCache = [
     '/qr-bar/assets/js/particles.js',
     '/qr-bar/assets/js/particles.min.js',
     // Assets - Images
-
+    '/qr-bar/assets/img/index.gif',
+    '/qr-bar/assets/img/bar-code-generator.svg',
+    '/qr-bar/assets/img/data-matrix-generator.svg',
+    '/qr-bar/assets/img/qr-code-generator.svg'
 ];
 
 // Install Service Worker

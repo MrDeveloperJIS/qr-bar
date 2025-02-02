@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- meta data -->
-    <meta name="description" content="QR Code Generator.">
+    <meta name="description" content="Data Matrix Generator.">
     <meta name="copyright" content="Md. Jahdul Islam Sujan">
     <meta name="audivor" content="Md. Jahidul Islam Sujan">
     <!-- auto reload -->
     <meta http-equiv="refresh" content="3600">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../../assets/img/qr-code-generator.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/img/data-matrix-generator.svg" type="image/x-icon">
     <!-- particles css -->
     <link rel="stylesheet" href="../../assets/css/particles.css">
     <!-- custom css -->
     <link rel="stylesheet" href="../../assets/css/apps.css">
     <!-- page title -->
-    <title> QR Code Generator </title>
+    <title> Data Matrix Generator </title>
     <!-- Google tag (gtag.js) - start -->
 
     <!-- Google tag (gtag.js) - end -->
@@ -51,7 +51,7 @@
 
     <main>
 
-        <h1>QR Code Generator</h1>
+        <h1>Data Matrix Generator</h1>
 
         <section id="box"></section>
 
@@ -71,7 +71,7 @@
             <table>
                 <tr>
                     <th>
-                        <label for="in1">Dimension</label>
+                        <label for="in1">Height or Dimension</label>
                     </th>
                     <td>
                         <input id="in1" type="number" value="256" min="256" max="1024" step="256">
@@ -79,81 +79,50 @@
                 </tr>
                 <tr>
                     <th>
-                        <label for="in2">Padding</label>
+                        <label for="in2">Rectangle</label>
                     </th>
                     <td>
-                        <input id="in2" type="number" value="4" min="1" max="10">
+                        <input id="in2" type="checkbox">
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <label for="in3">PATTERN</label>
+                        <label for="in3">Padding</label>
                     </th>
                     <td>
-                        <select id="in3">
-                            <option value="-1" selected>AUTO</option>
-                            <option value="0">TYPE 0</option>
-                            <option value="1">TYPE 1</option>
-                            <option value="2">TYPE 2</option>
-                            <option value="3">TYPE 3</option>
-                            <option value="4">TYPE 4</option>
-                            <option value="5">TYPE 5</option>
-                            <option value="6">TYPE 6</option>
-                            <option value="7">TYPE 7</option>
-                        </select>
+                        <input id="in3" type="number" value="2" min="2" max="10">
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <label for="in4">ECL</label>
+                        <label for="in4">Faces</label>
                     </th>
                     <td>
-                        <select id="in4">
-                            <option value="L">LOW</option>
-                            <option value="M" selected>MEDIUM</option>
-                            <option value="Q">QUARTILE</option>
-                            <option value="H">HIGH</option>
-                        </select>
+                        <input id="in4" type="color" value="#000000">
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <label for="in5">Boost ECL</label>
+                        <label for="in5">Background color</label>
                     </th>
                     <td>
-                        <input id="in5" type="checkbox" checked>
+                        <input id="in5" type="color" value="#ffffff">
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <label for="in6">Faces</label>
+                        <label for="in6">Background opaque</label>
                     </th>
                     <td>
-                        <input id="in6" type="color" value="#000000">
+                        <input id="in6" type="checkbox" checked>
                     </td>
                 </tr>
                 <tr>
                     <th>
-                        <label for="in7">Background color</label>
+                        <label for="in7">Optimized SVG SIZE</label>
                     </th>
                     <td>
-                        <input id="in7" type="color" value="#ffffff">
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="in8">Background opaque</label>
-                    </th>
-                    <td>
-                        <input id="in8" type="checkbox" checked>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="in9">Optimized SVG SIZE</label>
-                    </th>
-                    <td>
-                        <input id="in9" type="checkbox" checked>
+                        <input id="in7" type="checkbox" checked>
                     </td>
                 </tr>
             </table>
@@ -169,7 +138,7 @@
     </footer>
 
     <!-- project javascript -->
-    <script src="qrcode.js"></script>
+    <script src="datamatrix.js"></script>
     <script src="script.js"></script>
     <!-- particles javascript -->
     <script src="../../assets/js/particles.min.js"></script>

@@ -53,6 +53,7 @@ main {
 
 .info img {
     width: 200px;
+    margin: 10px auto 20px auto;
 }
 
 .info h1 {
@@ -119,7 +120,7 @@ hr {
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #f0f8ff;
     background-color: transparent;
@@ -175,6 +176,10 @@ p#copyright {
 
     .category-title {
         font-size: 1.3em;
+    }
+
+    .button-item img {
+        aspect-ratio: auto;
     }
 }
 

@@ -212,7 +212,7 @@
 	};
 
 	txt.value = [
-		'https://www.mdjahidulislamsujan.com/', 'https://www.nextfot.com/', 'https://www.mrjis.com/', 'https://mrdeveloperjis.github.io'
+		'https://www.mdjahidulislamsujan.com', 'https://www.nextfot.com', 'https://www.mrjis.com', 'https://mrdeveloperjis.github.io'
 	][(Math.random() * 4) | 0];
 
 	current(txt);

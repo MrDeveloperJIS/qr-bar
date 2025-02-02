@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
 Disallow: /apps/
 Disallow: /assets/
 Crawl-Delay: 20

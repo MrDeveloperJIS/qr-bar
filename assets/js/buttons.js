@@ -55,23 +55,22 @@ const buttons = [
         label: "QR Code Generator",
         url: "qr-code-generator",
         id: "qr-code-generator",
-        img: "qr-code-generator.png",
+        img: "qr-code-generator.svg",
         category: "Code Generators"
     },
     {
         label: "Bar Code Generator",
         url: "bar-code-generator",
         id: "bar-code-generator",
-        img: "bar-code-generator.png",
+        img: "bar-code-generator.svg",
         category: "Code Generators"
     },
     {
         label: "Data Matrix Generator",
         url: "data-matrix-generator",
         id: "data-matrix-generator",
-        img: "data-matrix-generator.png",
-        category: "Code Generators",
-        hidden: true
+        img: "data-matrix-generator.svg",
+        category: "Code Generators"
     },
 
     // Add more buttons here, each with a unique id, label, img, and category...
