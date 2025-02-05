@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v1.0.2'; // 2025-02-03 12:15 am
+const CACHE_NAME = 'v1.0.3'; // 2025-02-05 02:00 pm
 
 const urlsToCache = [
     // Root
