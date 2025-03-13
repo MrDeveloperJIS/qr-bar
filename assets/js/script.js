@@ -4,6 +4,11 @@
 //                                                      //
 //////////////////////////////////////////////////////////
 
+// URL Core Directory 
+const coreUrl = window.location.hostname === 'mrdeveloperjis.github.io' ? `/qr-bar/` : `/`;
+
+//////////////////////////////////////////////////////////
+
 // Function to create buttons from the buttons array with categories
 function createButtons() {
     const container = document.getElementById('button-container');
@@ -38,7 +43,7 @@ function createButtons() {
 
         categories[category].forEach(button => {
             const btn = document.createElement('a');
-            btn.href = "/qr-bar/apps/" + button.url;
+            btn.href = coreUrl + "apps/" + button.url;
             btn.className = 'button-item';
             btn.id = button.id;
             btn.setAttribute('aria-label', button.label);
@@ -51,7 +56,7 @@ function createButtons() {
 
             // Create image element for button
             const img = document.createElement('img');
-            img.src = "/qr-bar/assets/img/" + button.img;
+            img.src = coreUrl + "assets/img/" + button.img;
             img.alt = `${button.label} Image`;
 
             // Create label for button

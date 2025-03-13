@@ -20,9 +20,9 @@ section {
 
 /* main contents */
 main {
-    width: 80dvw;
+    width: calc(99vw - 40px);
+    height: calc(99vh - 40px);
     max-width: 1024px;
-    max-height: 85dvh;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -39,10 +39,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    border: 2px solid #f0f8ff;
-    border-radius: 40px 0;
-    background-color: transparent;
 }
 
 /* Information Section */
@@ -95,14 +91,15 @@ hr {
 .category-title {
     color: #f0f8ff;
     font-size: 1.5em;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     text-align: left;
+    display: none;
 }
 
 /* Button Section */
 #button-container {
     width: 100%;
-    margin-bottom: 32px;
+    margin: 32px auto;
 }
 
 /* Button Container for Categories */

@@ -60,8 +60,14 @@
 
     <!-- Redirect when clicking inside main -->
     <script>
-        document.querySelector('main').addEventListener('click', function () {
-            window.location.href = '/qr-bar/';
+        const coreUrl = window.location.hostname === 'mrdeveloperjis.github.io' ? `/qr-bar/` : `/`;
+        document.addEventListener('click', function (event) {
+            const main = document.querySelector('main');
+            if (main.contains(event.target)) {
+                window.location.href = coreUrl;
+            } else {
+                location.reload();
+            }
         });
     </script>
 
