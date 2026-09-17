@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- meta data -->
+    <meta name="description" content="QR Code, Bar Code, Data Matrix Generator - svg, png, jpg - A personal resource hub." />
+    <meta name="copyright" content="Md. Jahdul Islam Sujan">
+    <meta name="author" content="Md. Jahidul Islam Sujan" />
+    <!-- auto reload -->
+    <meta http-equiv="refresh" content="3600">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/qr-code-generator.svg" type="image/x-icon">
+    <!-- particles css -->
+    <link rel="stylesheet" href="assets/css/particles.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- page title -->
+    <title> QR Code, Bar Code, Data Matrix Generator </title>
+    <!-- Google tag (gtag.js) - start -->
+    
+    <!-- Google tag (gtag.js) - end -->
+</head>
+
+<body>
+
+    <!-- particles -->
+    <div id="particles-js"></div>
+    <!-- particles -->
+
+    <main>
+
+        <!-- Info Section -->
+        <section class="info">
+            <img src="assets/img/index.gif" alt="QR, Bar, DM">
+            <h1>Scanable Code Generator</h1>
+            <p>Generate QR Code, Bar Code, Data Matrix.</p>
+        </section>
+
+        <!-- Button Container - start -->
+        <section id="button-container">
+            <!-- Buttons will be dynamically added here -->
+        </section>
+        <!-- Button Container - end -->
+
+        <p id="copyright">&copy; Mr. JIS</p>
+
+    </main>
+
+    <!-- service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/qr-bar/service-worker.js')
+                .then(() => {
+                    console.log("Service Worker Registered Successfully");
+                    navigator.serviceWorker.ready.then((registration) => {
+                        registration.update();
+                    });
+                })
+                .catch((error) => {
+                    console.error("Service Worker Registration Failed:", error);
+                });
+        }
+    </script>
+    <!-- particles javascript -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <!-- custom javascript -->
+    <script src="assets/js/buttons.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

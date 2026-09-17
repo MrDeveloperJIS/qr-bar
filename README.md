@@ -1,3 +1,5 @@
-* QR Code generator
-* Bar Code generator
-* Data Matrix generator
+QR Code Generator
+
+Bar Code Generator
+
+Data Matrix Generator

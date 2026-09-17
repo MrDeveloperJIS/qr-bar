@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- meta data -->
+    <meta name="description" content="QR Code Generator.">
+    <meta name="copyright" content="Md. Jahdul Islam Sujan">
+    <meta name="audivor" content="Md. Jahidul Islam Sujan">
+    <!-- auto reload -->
+    <meta http-equiv="refresh" content="3600">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/img/qr-code-generator.svg" type="image/x-icon">
+    <!-- particles css -->
+    <link rel="stylesheet" href="../../assets/css/particles.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../assets/css/apps.css">
+    <!-- page title -->
+    <title> QR Code Generator </title>
+    <!-- Google tag (gtag.js) - start -->
+
+    <!-- Google tag (gtag.js) - end -->
+</head>
+
+<body>
+
+    <!-- particles -->
+    <div id="particles-js"></div>
+    <!-- particles -->
+
+    <header>
+
+        <div>
+            <a id="home-page">
+                <img src="../../assets/img/index.gif" alt="Home Page" class="logo">
+            </a>
+        </div>
+        <nav>
+            <label class="hamburger">
+                <input type="checkbox" id="toggle-btn">
+                <svg viewBox="0 0 32 32" width="40">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+            <section id="button-container"></section>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>QR Code Generator</h1>
+
+        <section id="box"></section>
+
+        <section id="txt">
+            <textarea id="msg"></textarea>
+        </section>
+
+        <section id="hnt">
+            <pre id="res"></pre>
+        </section>
+
+        <section id="set">
+
+            <a id="op1" class="opt" href="#">Advance settings</a>
+            <a id="op2" class="opt" href="#">Hide settings</a>
+
+            <table>
+                <tr>
+                    <th>
+                        <label for="in1">Dimension</label>
+                    </th>
+                    <td>
+                        <input id="in1" type="number" value="256" min="256" max="1024" step="256">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in2">Padding</label>
+                    </th>
+                    <td>
+                        <input id="in2" type="number" value="4" min="1" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in3">PATTERN</label>
+                    </th>
+                    <td>
+                        <select id="in3">
+                            <option value="-1" selected>AUTO</option>
+                            <option value="0">TYPE 0</option>
+                            <option value="1">TYPE 1</option>
+                            <option value="2">TYPE 2</option>
+                            <option value="3">TYPE 3</option>
+                            <option value="4">TYPE 4</option>
+                            <option value="5">TYPE 5</option>
+                            <option value="6">TYPE 6</option>
+                            <option value="7">TYPE 7</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in4">ECL</label>
+                    </th>
+                    <td>
+                        <select id="in4">
+                            <option value="L">LOW</option>
+                            <option value="M" selected>MEDIUM</option>
+                            <option value="Q">QUARTILE</option>
+                            <option value="H">HIGH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="hidden">
+                    <th>
+                        <label for="in5">Boost ECL</label>
+                    </th>
+                    <td>
+                        <input id="in5" type="checkbox" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in6">Faces</label>
+                    </th>
+                    <td>
+                        <input id="in6" type="color" value="#000000">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="in7">Background</label>
+                    </th>
+                    <td>
+                        <input id="in7" type="color" value="#ffffff">
+                    </td>
+                </tr>
+                <tr class="hidden">
+                    <th>
+                        <label for="in8">Background opaque</label>
+                    </th>
+                    <td>
+                        <input id="in8" type="checkbox" checked>
+                    </td>
+                </tr>
+                <tr class="hidden">
+                    <th>
+                        <label for="in9">Optimized SVG SIZE</label>
+                    </th>
+                    <td>
+                        <input id="in9" type="checkbox" checked>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <span id="copyright">&copy; Mr. JIS</span>
+
+    </footer>
+
+    <!-- project javascript -->
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+    <!-- particles javascript -->
+    <script src="../../assets/js/particles.min.js"></script>
+    <script src="../../assets/js/particles.js"></script>
+    <!-- custom javascript -->
+    <script src="../../assets/js/apps.js"></script>
+    <script src="../../assets/js/buttons.js"></script>
+
+</body>
+
+</html>

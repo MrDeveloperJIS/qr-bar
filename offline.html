@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- meta data -->
+    <meta name="description" content="QR Code, Bar Code, Data Matrix Generator - svg, png, jpg - Offline!" />
+    <meta name="copyright" content="Md. Jahdul Islam Sujan">
+    <meta name="author" content="Md. Jahidul Islam Sujan" />
+    <!-- auto reload -->
+    <meta http-equiv="refresh" content="3600">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+    <!-- custom css -->
+    <style>
+        * {
+            cursor: pointer;
+            color: #f0f8ff;
+            background-color: #0f0f0f;
+        }
+
+        main {
+            width: 80dvw;
+            max-width: 512px;
+            max-height: 75dvh;
+            overflow: auto;
+
+            padding: 20px;
+            line-height: 1.28em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(1rem, 0.75rem + 1.2dvw, 1.25rem);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border: 2px solid #f0f8ff;
+        }
+    </style>
+    <!-- page title -->
+    <title> QR Code, Bar Code, Data Matrix Generator - Offline </title>
+    <!-- Google tag (gtag.js) - start -->
+
+    <!-- Google tag (gtag.js) - end -->
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <h1>You’re Offline</h1>
+            <p>It seems like there’s no internet connection. Please reconnect to continue.</p>
+        </div>
+
+    </main>
+
+    <!-- Redirect when clicking inside main -->
+    <script>
+        const coreUrl = window.location.hostname === 'mrdeveloperjis.github.io' ? `/qr-bar/` : `/`;
+        document.addEventListener('click', function (event) {
+            const main = document.querySelector('main');
+            if (main.contains(event.target)) {
+                window.location.href = coreUrl;
+            } else {
+                location.reload();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
